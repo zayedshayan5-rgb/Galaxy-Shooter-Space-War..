@@ -24,7 +24,7 @@ width:100%;
 height:100%;
 background:black;
 z-index:9999;
-
+pointer-events:none;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -767,11 +767,10 @@ localStorage.setItem("coinPrice", coinPrice);
         alert("NOT ENOUGH COINS!");
 
     }
-}
-      setTimeout(() => {
 
-document.getElementById("loading-screen")
-.style.display = "none";
+    setTimeout(function(){
+
+document.getElementById("loading-screen").remove();
 
 }, 1000);
         
