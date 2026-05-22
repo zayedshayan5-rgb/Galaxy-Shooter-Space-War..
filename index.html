@@ -16,6 +16,38 @@
 
         canvas { display: block; }
 
+#loading-screen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+z-index:9999;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+#loading-screen img{
+width:100%;
+height:100%;
+object-fit:cover;
+position:absolute;
+top:0;
+left:0;
+opacity:0.5;
+}
+
+#loading-screen h1{
+color:white;
+font-size:50px;
+z-index:2;
+text-shadow:0 0 20px cyan;
+}
+        
         #ui-layer {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             pointer-events: none; z-index: 100;
